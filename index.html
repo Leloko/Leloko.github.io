@@ -5,58 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leloko James Lepolesa</title>
     <link rel="stylesheet" href="styles.css">
+	
 	<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 1rem;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 1rem;
-            margin-top: 20px;
-        }
-    </style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			text-align: left;
+			background-color: rgb(240,240,240);
+		}
+		header, footer {
+			background: rgb(0,200,255);
+			color: white;
+			padding: 1rem;
+			text-align: center;
+		}
+		nav ul {
+			list-style: none;
+			padding: 0;
+		}
+		nav ul li {
+			display: inline;
+			margin: 0 14px;
+		}
+		nav ul li a {
+			color: white;
+			text-decoration: none;
+		}
+		section {
+			padding: 21px;
+			margin: 21px auto;
+			width: 84%;
+			background: white;
+			border-radius: 7px;
+			box-shadow: 0 0 7px rgb(0,200,255);
+		}
+		section h2 {
+			border: 3px solid rgb(0,200,255);
+			text-align: center;
+		}
+		footer {
+			margin-top: 21px;
+		}
+	</style>
+
 </head>
 <body>
     <header>
         <h1>Welcome To My Site</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#chatbot">Chatbot</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#home"><strong>Home</strong></a></li>
+                <li><a href="#chatbot"><strong>My Chatbot<strong></a></li>
+				<li><a href="#portfolio"><strong>Portfolio<strong></a></li>
+				<li><a href="#work_experience"><strong>Work Experience<strong></a></li>
+				<li><a href="#education"><strong>Education<strong></a></li>
+				<li><a href="#hobbies"><strong>Hobbies<strong></a></li>
                 <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </nav>
@@ -75,24 +79,85 @@
     </section>
     
     <section id="chatbot">
-        <h2> Chatbot </h2>
+        <h2> My Chatbot </h2>
 		<p> Feel free to chat to my AI chatbot below for any enquiries. </p>
         <iframe src="https://huggingface.co/spaces/Leloko/MyChatbotSpace" width="100%" height="500px"></iframe>
     </section>
     
 	<section id="portfolio">
         <h2> Portfolio </h2>
-        <p>Here are some of my AI projects...</p>
+        <p>Here are some of my projects...</p>
     </section>
     
 	<section id="work_experience">
         <h2> Work Experience </h2>
-        <p>Here are some of my AI projects...</p>
+		<div class="job">
+			<h3>Industrial Projects Collaborator - Bidvest-Wits</h3>
+			<p><strong>Duration:</strong> Sep 2023 - Jan 2025</p>
+			<p><strong>Responsibilities:</strong></p>
+			<ul>
+				<li>Involvement of academic perspectives in Bidvest FM's industrial work</li>
+			</ul>
+		</div>
+		
+		<div class="job">
+			<h3>Teaching Assistant - Wits University</h3>
+			<p><strong>Duration:</strong> Mar 2021 - Dec 2023</p>
+			<p><strong>Responsibilities:</strong></p>
+			<ul>
+				<li>Tutoring Software Engineering and Software Development courses</li>
+				<li>Marking laboratory exercises and projects</li>
+				<li>Invigilation</li>
+			</ul>
+		</div>
+		
+		<div class="job">
+			<h3>OSS Engineer - Econet Telecom Lesotho</h3>
+			<p><strong>Duration:</strong> Jul 2017 - Feb 2021</p>
+			<p><strong>Responsibilities:</strong></p>
+			<ul>
+				<li>Planning and optimizing networks to meet ITU-T and company-set standards for KPIs/KQIs</li>
+				<li>Commissioning new GUL sites and enhancing existing ones</li>
+				<li>Fine-tuning network parameters and integrating new features</li>
+				<li>Conducting drive tests and benchmarking</li>
+				<li>Analyzing network performance statistically and generating reports</li>
+				<li>Addressing customer inquiries related to the quality of the network</li>
+			</ul>
+		</div>
+		
+		
     </section>
 	
 	<section id="education">
         <h2> Education </h2>
-        <p>Here are some of my AI projects...</p>
+        <div class="job">
+			<h3>PhD in Engineering (Electrical) - University of the Witwatersrand</h3>
+			<p><strong>Duration:</strong> July 2022 - Now</p>
+			<p><strong>Research:</strong></p>
+			<ul>
+				<li>Artificial intelligence techniques for load balancing in power distribution networks in the presence of electric vehicles</li>
+			</ul>
+		</div>
+		
+		<div class="job">
+			<h3>MSc in Engineering (Electrical) - University of the Witwatersrand</h3>
+			<p><strong>Duration:</strong> Feb 2021 - June 2022</p>
+			<p><strong>Research:</strong></p>
+			<ul>
+				<li>Electricity Theft Detection in Smart Grids Based on Deep Neural Network</li>
+			</ul>
+		</div>
+		
+		<div class="job">
+			<h3>Bachelor of Engineering in Electronics - National University of Lesotho</h3>
+			<p><strong>Duration:</strong> Aug 2012 - May 2017</p>
+			<p><strong>Awards:</strong></p>
+			<ul>
+				<li>Best Student in Electronics Engineering by <strong>Vodacom Lesotho (VCL)</strong></li>
+				<li>Best Student in Electronics by <strong>Lesotho Electricity and Water Authority (LEWA)</strong></li>
+				<li>Best Student in Electronics by <strong>Data-deal Security Systems (pty) Ltd</strong></li>
+			</ul>
+		</div>
     </section>
 	
 	<section id="hobbies">
