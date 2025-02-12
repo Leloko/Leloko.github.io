@@ -31,22 +31,27 @@
 		nav ul li a {
 			color: white;
 			text-decoration: none;
+			cursor: pointer;
 		}
-		section {
-			padding: 21px;
-			margin: 21px auto;
-			width: 84%;
-			background: white;
-			border-radius: 7px;
-			box-shadow: 0 0 7px rgb(0,200,255);
-		}
-		section h2 {
+		.content {
+            display: none;
+            padding: 21px;
+            margin: 21px auto;
+            width: 84%;
+            background: white;
+            border-radius: 7px;
+            box-shadow: 0 0 7px rgb(0,200,255);
+        }
+        .active {
+            display: block;
+        }
+		.content h2 {
 			border: 3px solid rgb(0,200,255);
 			text-align: center;
 		}
-		footer {
-			margin-top: 21px;
-		}
+		<!-- footer { -->
+			<!-- margin-top: 21px; -->
+		<!-- } -->
 	</style>
 
 </head>
@@ -55,18 +60,17 @@
         <h1>Welcome To My Site</h1>
         <nav>
             <ul>
-                <li><a href="#home"><strong>Home</strong></a></li>
-                <li><a href="#chatbot"><strong>My Chatbot<strong></a></li>
-				<li><a href="#portfolio"><strong>Portfolio<strong></a></li>
-				<li><a href="#work_experience"><strong>Work Experience<strong></a></li>
-				<li><a href="#education"><strong>Education<strong></a></li>
-				<li><a href="#hobbies"><strong>Hobbies<strong></a></li>
-                <!-- <li><a href="#contact">Contact</a></li> -->
+                <li><a onclick="showTab('home')"><strong>Home</strong></a></li>
+                <!-- <li><a onclick="showTab('chatbot')"><strong>My Chatbot</strong></a></li> -->
+                <li><a onclick="showTab('portfolio')"><strong>Portfolio</strong></a></li>
+                <li><a onclick="showTab('work_experience')"><strong>Work Experience</strong></a></li>
+                <li><a onclick="showTab('education')"><strong>Education</strong></a></li>
+                <li><a onclick="showTab('hobbies')"><strong>Hobbies</strong></a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="home">
+    <section id="home" class = "content active">
         <h2> About Me </h2>
         <p> I specialize in leveraging AI techniques to address complex challenges in a data-driven approach.
 		Proficient in frameworks such as TensorFlow, PyTorch, OpenCV, Scikit-learn, and Pandas, I design 
@@ -76,20 +80,23 @@
 		Beyond my primary focus, I engage in diverse machine learning projects, delivering impactful, data-driven
 		solutions across industries. With a robust background in telecommunications (2017–2021), I bring 
 		cross-industry expertise to my work. </p>
-    </section>
-    
-    <section id="chatbot">
-        <h2> My Chatbot </h2>
+		
 		<p> Feel free to chat to my AI chatbot below for any enquiries. </p>
         <iframe src="https://huggingface.co/spaces/Leloko/RAGChatbotSpace" width="100%" height="500px"></iframe>
     </section>
     
-	<section id="portfolio">
+    <!-- <section id="chatbot"> -->
+        <!-- <h2> My Chatbot </h2> -->
+		<!-- <p> Feel free to chat to my AI chatbot below for any enquiries. </p> -->
+        <!-- <iframe src="https://huggingface.co/spaces/Leloko/RAGChatbotSpace" width="100%" height="500px"></iframe> -->
+    <!-- </section> -->
+    
+	<section id="portfolio" class = "content">
         <h2> Portfolio </h2>
         <p>Here are some of my projects...</p>
     </section>
     
-	<section id="work_experience">
+	<section id="work_experience" class = "content">
         <h2> Work Experience </h2>
 		<div class="job">
 			<h3>Industrial Projects Collaborator - Bidvest-Wits</h3>
@@ -124,11 +131,9 @@
 				<li>Addressing customer inquiries related to the quality of the network</li>
 			</ul>
 		</div>
-		
-		
     </section>
 	
-	<section id="education">
+	<section id="education" class = "content">
         <h2> Education </h2>
         <div class="job">
 			<h3>PhD in Engineering (Electrical) - University of the Witwatersrand</h3>
@@ -160,7 +165,7 @@
 		</div>
     </section>
 	
-	<section id="hobbies">
+	<section id="hobbies" class = "content">
         <h2> Hobbies </h2>
         <p>Here are some of my AI projects...</p>
     </section>
@@ -173,5 +178,13 @@
     <footer>
         <p>&copy; Monna oa Matlameng le Pitseng</p>
     </footer>
+	
+	<script>
+        function showTab(tabId) {
+            let sections = document.querySelectorAll('.content');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
 </body>
 </html>
