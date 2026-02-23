@@ -5,7 +5,7 @@ body {
 }
 
 header, footer {
-    background: rgb(0,200,255);
+    background: rgb(135,206,235);
     color: white;
     padding: 1rem;
     text-align: center;
@@ -32,11 +32,11 @@ section.content {
     width: 84%;
     background: white;
     border-radius: 7px;
-    box-shadow: 0 0 7px rgb(0,200,255);
+    box-shadow: 0 0 7px rgb(135,206,235);
 }
 
 .content h2 {
-    border: 3px solid rgb(0,200,255);
+    border: 3px solid rgb(135,206,235);
     text-align: center;
 }
 
