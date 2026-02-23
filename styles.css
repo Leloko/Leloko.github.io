@@ -24,6 +24,9 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 8px 12px;
+    font-size: 18px;   /* Increase this value */
+    font-weight: 600;  /* Optional: makes it slightly bold */
 }
 
 section.content {
