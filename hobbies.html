@@ -19,43 +19,76 @@
             </ul>
         </nav>
     </header>
-	<section id="work" class = "content active">
-	  <h2> Hobbies </h2>
-			<div class="job">
-				<h3>Industrial Projects Collaborator - Bidvest-Wits</h3>
-				<p><strong>Duration:</strong> Sep 2023 - Jan 2025</p>
-				<p><strong>Responsibilities:</strong></p>
-				<ul>
-					<li>Involvement of academic perspectives in Bidvest FM's industrial work</li>
-				</ul>
-			</div>
-			
-			<div class="job">
-				<h3>Teaching Assistant - Wits University</h3>
-				<p><strong>Duration:</strong> Mar 2021 - Dec 2023</p>
-				<p><strong>Responsibilities:</strong></p>
-				<ul>
-					<li>Tutoring Software Engineering and Software Development courses</li>
-					<li>Marking laboratory exercises and projects</li>
-					<li>Invigilation</li>
-				</ul>
-			</div>
-			
-			<div class="job">
-				<h3>OSS Engineer - Econet Telecom Lesotho</h3>
-				<p><strong>Duration:</strong> Jul 2017 - Feb 2021</p>
-				<p><strong>Responsibilities:</strong></p>
-				<ul>
-					<li>Planning and optimizing networks to meet ITU-T and company-set standards for KPIs/KQIs</li>
-					<li>Commissioning new GUL sites and enhancing existing ones</li>
-					<li>Fine-tuning network parameters and integrating new features</li>
-					<li>Conducting drive tests and benchmarking</li>
-					<li>Analyzing network performance statistically and generating reports</li>
-					<li>Addressing customer inquiries related to the quality of the network</li>
-				</ul>
-			</div>
+	<section class="content">
+	    <h2>Hobbies</h2>
+	
+	    <div class="hobby-grid">
+
+			<!-- Singing -->
+	        <div class="hobby-card">
+	            <div class="slider" data-slider>
+	                <img src="hobbies/sing1.jpeg" class="slide active">
+	                <img src="hobbies/sing2.jpeg" class="slide">
+	                <img src="hobbies/sing3.jpeg" class="slide">
+	            </div>
+	            <h3>Singing</h3>
+	        </div>
+
+	        <!-- gym -->
+	        <div class="hobby-card">
+	            <div class="slider" data-slider>
+	                <img src="hobbies/gym1.jpeg" class="slide active">
+	                <img src="hobbies/gym2.jpeg" class="slide">
+	                <img src="hobbies/gym3.jpeg" class="slide">
+	            </div>
+	            <h3>Gym workouts</h3>
+	        </div>
+	
+	        <!-- Hiking -->
+	        <div class="hobby-card">
+	            <div class="slider" data-slider>
+	                <img src="hobbies/hike1.jpeg" class="slide active">
+	                <img src="hobbies/hike2.jpeg" class="slide">
+	                <img src="hobbies/hike3.jpeg" class="slide">
+					<img src="hobbies/hike4.jpeg" class="slide">
+	            </div>
+	            <h3>Hiking</h3>
+	        </div>
+	
+	        <!-- Swimming -->
+	        <div class="hobby-card">
+	            <div class="slider" data-slider>
+	                <img src="hobbies/swim1.jpeg" class="slide active">
+	                <img src="hobbies/swim2.jpeg" class="slide">
+	            </div>
+	            <h3>Swimming</h3>
+	        </div>
+
+			<!-- Gardening -->
+	        <div class="hobby-card">
+	            <div class="slider" data-slider>
+	                <img src="hobbies/garden1.jpeg" class="slide active">
+	                <img src="hobbies/garden2.jpeg" class="slide">
+	                <img src="hobbies/garden3.jpeg" class="slide">
+	            </div>
+	            <h3>Gardening</h3>
+	        </div>
+	    </div>
 	</section>
-	 <footer>
+	
+	<script>
+	document.querySelectorAll('[data-slider]').forEach(slider => {
+	    const slides = slider.querySelectorAll('.slide');
+	    let index = 0;
+	
+	    setInterval(() => {
+	        slides[index].classList.remove('active');
+	        index = (index + 1) % slides.length;
+	        slides[index].classList.add('active');
+	    }, 3000); // 3 seconds
+	});
+	</script>
+	<footer>
         <p>&copy; Monna oa Matlameng le Pitseng</p>
     </footer>
 </body>
