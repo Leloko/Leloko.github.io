@@ -30,9 +30,12 @@ nav ul li a {
 }
 
 section.content {
-    padding: 21px;
-    margin: 21px auto;
-    width: 84%;
+    /* padding: 21px;
+    margin: 21px auto; */
+    /* width: 84%; */
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
     background: white;
     border-radius: 7px;
     box-shadow: 0 0 7px rgba(135,206,235,0.7);
