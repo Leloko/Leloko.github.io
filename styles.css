@@ -75,14 +75,15 @@ section.content {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    position: relative;
+    position: center;
+    /* position: relative; */
 }
 
 /* Images inside the card */
 .hobby-card img, 
 .slide {
-    width: 95%;
-    height: 90%;
+    width: 99%;
+    height: 88%;
     object-fit: cover;               /* Fill card properly */
     object-position: center;         /* Center image */
     transition: transform 0.5s ease; /* Smooth zoom */
@@ -91,16 +92,16 @@ section.content {
 /* ---------- SLIDER CONTAINER ---------- */
 .slider {
     position: relative;
-    width: 95%;
-    height: 90%;                     /* Fill hobby-card */
+    width: 99%;
+    height: 88%;                     /* Fill hobby-card */
     overflow: hidden;
 }
 
 /* SLIDE IMAGES */
 .slide {
     position: absolute;
-    width: 95%;
-    height: 90%;
+    width: 99%;
+    height: 88%;
     opacity: 0;
     transition: opacity 0.8s ease-in-out, transform 0.6s ease;
 }
