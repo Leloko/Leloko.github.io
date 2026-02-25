@@ -89,7 +89,7 @@ section.content {
     transition: transform 0.5s ease; /* Smooth zoom */
 }
 
-.hobby-card h3 {
+.hobby-card p {
     /* border: 3px solid rgba(135,206,235,0.7); */
     text-align: center;
 }
